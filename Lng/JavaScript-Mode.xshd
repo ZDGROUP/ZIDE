@@ -1,0 +1,358 @@
+<?xml version="1.0"?>
+<!-- syntaxdefinition for JavaScript 2.0 by Svante Lidman -->
+
+<SyntaxDefinition name ="JavaScript" extensions = ".js">
+	
+	<Properties>
+		<Property name="LineComment" value="//"/>
+	</Properties>
+
+	<Digits name ="Digits" bold ="false" italic ="false" color ="Magenta"/>
+
+	<RuleSets>
+		<RuleSet ignorecase = "false">
+		
+		
+		
+			<Delimiters>=!&gt;&lt;+-/*%&amp;|^~.}{,;][?:</Delimiters>
+			
+			<Span name ="LineComment" bold ="false" italic ="false" color ="Green" stopateol ="true">
+				<Begin>//</Begin>
+			</Span>
+					
+			<Span name ="BlockComment" bold ="false" italic ="false" color ="Green" stopateol ="false">
+				<Begin>/*</Begin>
+				<End>*/</End>
+			</Span>
+			
+			<Span name ="String" bold ="false" italic ="false" color ="Sienna" stopateol ="false">
+				<Begin>&quot;</Begin>
+				<End>&quot;</End>
+			</Span>
+			
+	
+			<Span  name ="ZFVAR1"  bold="false" italic = "false" color = "#FF0000"  stopateol = "true">
+						<Begin>C_</Begin>
+						<End>=</End>
+			</Span>
+			
+			
+			<Span  name ="ZFVAR2"  bold="false" italic = "false" color = "#FF0000"  stopateol = "true">
+						<Begin>:C_</Begin>
+						<End>.</End>
+			</Span>
+			
+			<Span  name ="ZFVAR3"  bold="false" italic = "false" color = "#FF0000"  stopateol = "true">
+						<Begin>=C_</Begin>
+						<End>.</End>
+			</Span>
+			
+			<Span  name ="ZFVAR4"  bold="false" italic = "false" color = "#FF0000"  stopateol = "true">
+						<Begin>(C_</Begin>
+						<End>.</End>
+			</Span>
+			
+		
+			
+			
+			
+			
+			
+			
+	
+			<Span name = "Character" bold = "false" italic = "false" color = "Sienna" stopateol = "true">
+				<Begin>&apos;</Begin>
+				<End>&apos;</End>
+			</Span>
+	
+			<KeyWords name ="JavaScriptKeyWords" bold="false" italic = "false" color = "Blue">
+				<Key word =  "break" />
+				<Key word =  "continue" />
+				<Key word =  "delete" />
+				<Key word =  "else" />
+				<Key word =  "for" />
+				<Key word =  "function" />
+				<Key word =  "if" />
+				<Key word =  "in" />
+				<Key word =  "new" />
+				<Key word =  "return" />
+				<Key word =  "this" />
+				<Key word =  "typeof" />
+				<Key word =  "var" />
+				<Key word =  "void" />
+				<Key word =  "while" />
+				<Key word =  "with" />
+				<Key word =  "async" />
+				<Key word =  "await" />
+				<Key word =  "ZfAction" />
+				<Key word =  "callZf_jslib" />
+				<Key word =  "showMessageModal" />
+				<Key word="LS_IS_NULL"/>
+				<Key word="LA_IS_NULL"/>
+				<Key word="IS_NULL"/>
+				<Key word="document"/>
+				<Key word="getElementById"/>
+				<Key word="getElementsByTagName"/>
+				<Key word="length"/>
+				<Key word="push"/>
+				<Key word="getElementsByClassName"/>
+				<Key word="innerHTML"/>
+				<Key word="getElementByAttribute	"/>
+				<Key word="GetUrlParameter"/>
+				<Key word="GetControlByName"/>
+				<Key word="elements"/>
+				<Key word="hasAttribute"/>
+				<Key word="CloseActiveTab"/>
+				<Key word="disable_all_control_in"/>
+				<Key word="disable_all_control"/>
+				<Key word="enable_all_control"/>
+				<Key word="baseapplicationsrc"/>
+				<Key word="window.parent"/>
+				<Key word="parentElement"/>
+				<Key word="constructor"/>
+				<Key word="toExponential"/>
+				<Key word="toFixed"/>
+				<Key word="toLocaleString"/>
+				<Key word="toPrecision"/>
+				<Key word="toString"/>
+				<Key word="valueOf"/>
+				<Key word="toSource"/>
+				<Key word="toString"/>
+				<Key word="valueOf"/>
+				<Key word="charAt"/>
+				<Key word="charCodeAt"/>
+				<Key word="concat"/>
+				<Key word="indexOf"/>
+				<Key word="lastIndexOf"/>
+				<Key word="localeCompare"/>
+				<Key word="length"/>
+				<Key word="match"/>
+				<Key word="replace"/>
+				<Key word="search"/>
+				<Key word="slice"/>
+				<Key word="split"/>
+				<Key word="substr"/>
+				<Key word="substring"/>
+				<Key word="toLocaleLowerCase"/>
+				<Key word="toLocaleUpperCase"/>
+				<Key word="toLowerCase"/>
+				<Key word="toString"/>
+				<Key word="toUpperCase"/>
+				<Key word="valueOf"/>
+				<Key word="anchor"/>
+				<Key word="big"/>
+				<Key word="blink"/>
+				<Key word="bold"/>
+				<Key word="fixed"/>
+				<Key word="fontcolor"/>
+				<Key word="fontsize"/>
+				<Key word="italics"/>
+				<Key word="link"/>
+				<Key word="small"/>
+				<Key word="strike"/>
+				<Key word="sub"/>
+				<Key word="sup"/>
+				<Key word="concat"/>
+				<Key word="every"/>
+				<Key word="filter"/>
+				<Key word="forEach"/>
+				<Key word="indexOf"/>
+				<Key word="join"/>
+				<Key word="lastIndexOf"/>
+				<Key word="map"/>
+				<Key word="pop"/>
+				<Key word="push"/>
+				<Key word="reduce"/>
+				<Key word="reduceRight"/>
+				<Key word="reverse"/>
+				<Key word="shift"/>
+				<Key word="slice"/>
+				<Key word="some"/>
+				<Key word="toSource"/>
+				<Key word="toString"/>
+				<Key word="unshift"/>
+				<Key word="Date"/>
+				<Key word="getDate"/>
+				<Key word="getDay"/>
+				<Key word="getFullYear"/>
+				<Key word="getHours"/>
+				<Key word="getMilliseconds"/>
+				<Key word="getMinutes"/>
+				<Key word="getMonth"/>
+				<Key word="getSeconds"/>
+				<Key word="getTime"/>
+				<Key word="getTimezoneOffset"/>
+				<Key word="getUTCDate"/>
+				<Key word="getUTCDay"/>
+				<Key word="getUTCFullYear"/>
+				<Key word="getUTCHours"/>
+				<Key word="getUTCMilliseconds"/>
+				<Key word="getUTCMinutes"/>
+				<Key word="getUTCMonth"/>
+				<Key word="getUTCSeconds"/>
+				<Key word="getYear"/>
+				<Key word="setDate"/>
+				<Key word="setFullYear"/>
+				<Key word="setHours"/>
+				<Key word="setMilliseconds"/>
+				<Key word="setMinutes"/>
+				<Key word="setMonth"/>
+				<Key word="setSeconds"/>
+				<Key word="setTime"/>
+				<Key word="setUTCDate"/>
+				<Key word="setUTCFullYear"/>
+				<Key word="setUTCHours"/>
+				<Key word="setUTCMilliseconds"/>
+				<Key word="setUTCMinutes"/>
+				<Key word="setUTCMonth"/>
+				<Key word="setUTCSeconds"/>
+				<Key word="setYear"/>
+				<Key word="toDateString"/>
+				<Key word="toGMTString"/>
+				<Key word="toLocaleDateString"/>
+				<Key word="toLocaleFormat"/>
+				<Key word="toLocaleString"/>
+				<Key word="toLocaleTimeString"/>
+				<Key word="toSource"/>
+				<Key word="toString"/>
+				<Key word="toTimeString"/>
+				<Key word="toUTCString"/>
+				<Key word="valueOf"/>
+				<Key word="abs"/>
+				<Key word="acos"/>
+				<Key word="asin"/>
+				<Key word="atan"/>
+				<Key word="atan2"/>
+				<Key word="ceil"/>
+				<Key word="cos"/>
+				<Key word="exp"/>
+				<Key word="floor"/>
+				<Key word="log"/>
+				<Key word="max"/>
+				<Key word="min"/>
+				<Key word="pow"/>
+				<Key word="random"/>
+				<Key word="round"/>
+				<Key word="tan"/>
+				<Key word="toSource"/>
+				<Key word="exec"/>
+				<Key word="test"/>
+				<Key word="toString"/>
+				<Key word="getElementsById"/>
+				<Key word="getElementByName"/>
+				<Key word="getElementsByName"/>
+				<Key word="getElementValueById"/>
+				<Key word="getElementValueByName"/>
+
+
+
+			
+				<!--ECMAScript keywords-->
+				<!-- Reserved for future use 
+					(some are already used in some Javascript Engines) 
+				-->
+				<Key word =  "abstract" />
+				<Key word =  "boolean" />
+				<Key word =  "byte" />
+				<Key word =  "case" />
+				<Key word =  "catch" />
+				<Key word =  "char" />
+				<Key word =  "class" />
+				<Key word =  "const" />
+				<Key word =  "debugger" />
+				<Key word =  "default" />
+				<Key word =  "do" />
+				<Key word =  "double" />
+				<Key word =  "enum" />
+				<Key word =  "export" />
+				<Key word =  "extends" />
+				<Key word =  "final" />
+				<Key word =  "finally" />
+				<Key word =  "float" />
+				<Key word =  "goto" />
+				<Key word =  "implements" />
+				<Key word =  "import" />
+				<Key word =  "instanceof" />
+				<Key word =  "int" />
+				<Key word =  "interface" />
+				<Key word =  "long" />
+				<Key word =  "native" />
+				<Key word =  "package" />
+				<Key word =  "private" />
+				<Key word =  "protected" />
+				<Key word =  "public" />
+				<Key word =  "short" />
+				<Key word =  "static" />
+				<Key word =  "super" />
+				<Key word =  "switch" />
+				<Key word =  "synchronized" />
+				<Key word =  "throw" />
+				<Key word =  "throws" />
+				<Key word =  "transient" />
+				<Key word =  "try" />
+				<Key word =  "volatile" />
+				<Key word =  "let" />
+				<Key word =  "var" />
+				<Key word =  "alert" />
+				
+			</KeyWords>
+	
+			<KeyWords name ="JavaScriptIntrinsics" bold="false" italic = "false" color = "DarkViolet">
+				<Key word =  "Array" />
+				<Key word =  "Boolean" />
+				<Key word =  "Date" />
+				<Key word =  "Function" />
+				<Key word =  "Global" />
+				<Key word =  "Math" />
+				<Key word =  "Number" />
+				<Key word =  "Object" />
+				<Key word =  "RegExp" />
+				<Key word =  "String" />
+				<Key word =  "document" />
+				<Key word =  "fx_fo" />
+				<Key word =  "body" />
+				<Key word =  "value" />
+				<Key word =  "name" />
+				<Key word =  "parent" />
+				
+			</KeyWords>
+			
+			<KeyWords name ="JavaScriptLiterals" bold="false" italic = "false" color = "Blue">
+				<Key word =  "false" />
+				<Key word =  "null" />
+				<Key word =  "true" />
+				<Key word =  "NaN" />
+				<Key word =  "Infinity" />
+			</KeyWords>
+	
+			<KeyWords name ="JavaScriptLiterals" bold="false" italic = "false" color = "Blue">
+				<Key word =  "" />
+			</KeyWords>
+	
+			<KeyWords name ="JavaScriptGlobalFunctions" bold="false" italic = "false" color = "Blue">
+				<Key word =  "eval" />
+				<Key word =  "parseInt" />
+				<Key word =  "parseFloat" />
+				<Key word =  "escape" />
+				<Key word =  "unescape" />
+				<Key word =  "isNaN" />
+				<Key word =  "isFinite" />
+				
+			</KeyWords>		
+		</RuleSet>
+	
+	   <RuleSet name = "DocCommentSet" ignorecase = "false">
+		  
+			<Span name = "ZGDTag2"  bold = "false" italic = "false" color = "Red" stopateol = "true">
+				<Begin>C_</Begin>
+				<End>.</End>
+			</Span>
+			
+			
+			
+		</RuleSet>
+	
+	</RuleSets>
+	
+</SyntaxDefinition>
+
